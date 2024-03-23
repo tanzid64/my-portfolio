@@ -7,8 +7,8 @@ const Intro = () => {
     <div
       className="relative hover:border-[3px] border-gray-600
             rounded-lg  transition-all duration-300
-            ease-in-out cursor-pointer shadow-xl 
-            shadow-gray-800"
+            ease-in-out cursor-pointer  
+           "
     >
       <img
         src={background}
