@@ -6,7 +6,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
 
 export const menus = [
-  { name: "Home", link: "/home", icon: FaHome },
+  { name: "Home", link: "/", icon: FaHome },
   { name: "Expertise", link: "/services", icon: GiSkills },
   { name: "messages", link: "/", icon: FiMessageSquare },
   { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
