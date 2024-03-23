@@ -4,11 +4,16 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const Intro = () => {
   return (
-    <div className="relative">
+    <div
+      className="relative hover:border-[3px] border-gray-600
+            rounded-lg  transition-all duration-300
+            ease-in-out cursor-pointer shadow-xl 
+            shadow-gray-800"
+    >
       <img
         src={background}
         alt=""
-        className="h-auto min-w-full opacity-85 dark:opacity-100"
+        className="h-auto min-w-full opacity-85 dark:opacity-100 "
       />
       <div className="absolute inset-0 flex ml-5 lg:ml-48 md:ml-32 items-center">
         <div className="text-center ">
