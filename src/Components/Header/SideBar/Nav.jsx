@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { DarkThemeToggle } from "flowbite-react";
 import NavFooter from "./NavFooter";
+import logo from "/images/logo.jpeg";
 import { menus } from "./Data/NavMenu";
+
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -28,7 +30,24 @@ const Nav = () => {
         />
       </div>
       {/* Nav Menu */}
-
+      {/* About me */}
+      <div className="flex flex-col items-center justify-center ">
+        <img
+          src={logo}
+          alt="logo.jpeg"
+          className={` rounded-full border-[2px]  ${
+            !open ? "h-16px w-16px" : "h-32 w-32"
+          }`}
+        />
+        <div
+          className={` ${
+            open ? "block" : "hidden"
+          } text-gray-900 dark:text-gray-100 text-center border-b-2 p-2`}
+        >
+          Md. Tanzid Haque
+          <p>Python | Django Developer</p>
+        </div>
+      </div>
       <div className="mt-4 flex flex-col gap-4 relative">
         {menus?.map((menu, i) => (
           <NavLink
@@ -67,4 +86,4 @@ const Nav = () => {
 };
 
 export default Nav;
-// 
+//

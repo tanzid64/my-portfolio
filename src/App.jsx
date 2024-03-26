@@ -1,21 +1,24 @@
 import SiteHeader from "./Components/Header/SiteHeader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Components/Home/Home";
 import Services from "./Components/Services/Services";
 import Skills from "./Components/Skills/Skills";
+import Footer from "./Components/Footer";
+
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <SiteHeader />,
+      element: (
+        <>
+          <SiteHeader />
+          <Footer/>
+        </>
+      ),
       children: [
+        
         {
           path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/skills",
           element: <Skills />,
         },
         {
