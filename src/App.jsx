@@ -2,6 +2,7 @@ import SiteHeader from "./Components/Header/SiteHeader";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Services from "./Components/Services/Services";
+import Skills from "./Components/Skills/Skills";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -12,6 +13,10 @@ const App = () => {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/skills",
+          element: <Skills />,
         },
         {
           path: "/services",

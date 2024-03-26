@@ -9,7 +9,7 @@ import { GrServices } from "react-icons/gr";
 
 export const menus = [
   { name: "Home", link: "/", icon: FaHome },
-  { name: "Expertise", link: "/services", icon: GiSkills },
+  { name: "Expertise", link: "/skills", icon: GiSkills },
   { name: "Services", link: "/services", icon: GrServices },
   { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
   { name: "File Manager", link: "/", icon: FiFolder },
