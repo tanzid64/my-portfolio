@@ -32,10 +32,10 @@ export default function Skills() {
           {skills.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`w-2/3 md:w-full shadow-md hover:scale-105 duration-500 p-2 rounded-lg ${style}`}
+              className={`w-full shadow-md hover:scale-105 duration-500 p-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4 dark:text-white text-[8px] md:text-md">{title}</p>
+              <p className="mt-4 dark:text-white text-[10px] md:text-md">{title}</p>
             </div>
           ))}
         </div>

@@ -25,7 +25,7 @@ export default [
   {
     id: 3,
     src: javascript,
-    title: "JS",
+    title: "JavaScript",
     style: "shadow-yellow-500",
   },
   {
