@@ -3,7 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Services from "./Components/Services/Services";
 import Skills from "./Components/Skills/Skills";
 import Footer from "./Components/Footer";
-
+import Contact from "./Components/Contact/Contact";
+import Works from "./Components/Portfolio/Works";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -12,11 +13,10 @@ const App = () => {
       element: (
         <>
           <SiteHeader />
-          <Footer/>
+          <Footer />
         </>
       ),
       children: [
-        
         {
           path: "/",
           element: <Skills />,
@@ -24,6 +24,14 @@ const App = () => {
         {
           path: "/services",
           element: <Services />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/projects",
+          element: <Works />,
         },
       ],
     },

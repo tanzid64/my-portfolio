@@ -8,7 +8,10 @@ const SiteHeader = () => {
       <Nav />
       <div className="p-3 text-xl text-gray-900 font-semibold w-full ">
         <Intro className="" />
-        <Outlet/>
+
+
+          <Outlet />
+
       </div>
     </section>
   );
