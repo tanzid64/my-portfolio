@@ -1,3 +1,4 @@
+import BannerFullScreen from "./BannerFullScreen";
 import IntroTypeAnimation from "./IntroTypeAnimation";
 import background from "/images/banner.png";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
@@ -14,6 +15,7 @@ const Intro = () => {
         src={background}
         alt=""
         className="h-auto min-w-full opacity-85 dark:opacity-100 "
+        onClick={()=><BannerFullScreen/>}
       />
       <div className="absolute inset-0 flex ml-5 lg:ml-48 md:ml-32 items-center">
         <div className="text-center ">
