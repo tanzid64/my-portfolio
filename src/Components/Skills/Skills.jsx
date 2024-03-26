@@ -35,7 +35,7 @@ export default function Skills() {
               className={`w-full shadow-md hover:scale-105 duration-500 p-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4 dark:text-white text-[10px] md:text-md">{title}</p>
+              <p className="mt-4 dark:text-white text-[8px] md:text-md">{title}</p>
             </div>
           ))}
         </div>
