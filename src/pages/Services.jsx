@@ -1,26 +1,7 @@
+import { services } from "@/data/data";
 import { motion } from "framer-motion";
 import { BsArrowDownRight } from "react-icons/bs";
 const Services = () => {
-  const services = [
-    {
-      num: "01",
-      title: "Front-end Development",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
-    },
-    {
-      num: "02",
-      title: "Back-end Development",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
-    },
-    {
-      num: "03",
-      title: "API Development",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
-    },
-  ];
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">

@@ -45,6 +45,28 @@ export const projects = [
   },
 ];
 
+// Service Page Data
+export const services = [
+  {
+    num: "01",
+    title: "Front-end Development",
+    description:
+      "Crafting beautiful and responsive interfaces is my passion. With expertise in HTML5, CSS3, and JavaScript, I design visually appealing, user-friendly websites that work flawlessly across all devices. Whether it's a static landing page or a dynamic web application, I ensure a seamless user experience that keeps your audience engaged.",
+  },
+  {
+    num: "02",
+    title: "Back-end Development",
+    description:
+      "Behind every great website is a robust backend. I specialize in building scalable, secure, and high-performance server-side applications using Node.js and Express. From user authentication and database management to complex business logic, I ensure that your website's backend operates smoothly and efficiently.",
+  },
+  {
+    num: "03",
+    title: "API Development",
+    description:
+      "Efficient data management and integration are crucial for modern web applications. I develop RESTful APIs that provide seamless communication between the frontend and backend. By ensuring efficient data retrieval and manipulation, I enable your website to handle complex functionalities and scale effortlessly as your needs grow.",
+  },
+];
+
 // Contact Page
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 export const contactInfo = [
