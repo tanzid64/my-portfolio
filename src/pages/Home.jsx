@@ -19,14 +19,16 @@ const Home = () => {
             </p>
             {/* Button & Socials */}
             <div className="flex flex-col items-center xl:flex-row gap-8">
-              <Button
-                className="uppercase flex items-center gap-2"
-                variant="outline"
-                size="lg"
-              >
-                <span>Download Resume</span>
-                <FaDownload className="text-xl" />
-              </Button>
+              <a href="https://drive.google.com/file/d/1ZK7vbCvXsejlgVER9_SU3k17tkDtK8wY/view?usp=sharing" target="_blank">
+                <Button
+                  className="uppercase flex items-center gap-2"
+                  variant="outline"
+                  size="lg"
+                >
+                  <span>Download Resume</span>
+                  <FaDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyle="flex gap-6"
@@ -41,7 +43,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 };
