@@ -1,46 +1,35 @@
-import SiteHeader from "./Components/Header/SiteHeader";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Services from "./Components/Services/Services";
-import Skills from "./Components/Skills/Skills";
-import Footer from "./Components/Footer";
-import Contact from "./Components/Contact/Contact";
-import Works from "./Components/Portfolio/Works";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Contact, Home, Layout, Resume, Services, Work } from "./pages";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <>
-          <SiteHeader />
-          <Footer />
-        </>
-      ),
+      element: <Layout />,
       children: [
         {
-          path: "/",
-          element: <Skills />,
+          index: true,
+          element: <Home />,
         },
         {
           path: "/services",
           element: <Services />,
         },
         {
-          path: "/contact",
-          element: <Contact />,
+          path: "/work",
+          element: <Work />,
         },
         {
-          path: "/projects",
-          element: <Works />,
+          path: "/resume",
+          element: <Resume />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
   ]);
-  return (
-    <div className="bg-gray-200 dark:bg-primaryDark">
-      <RouterProvider router={router} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
-
 export default App;
