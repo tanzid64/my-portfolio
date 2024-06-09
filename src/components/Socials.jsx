@@ -3,15 +3,15 @@ const Socials = ({ containerStyle, iconStyle }) => {
   const socials = [
     {
       icon: <FaGithub />,
-      path: "",
+      path: "https://github.com/tanzid64",
     },
     {
       icon: <FaLinkedinIn />,
-      path: "",
+      path: "https://www.linkedin.com/in/tanzid64/",
     },
     {
       icon: <FaFacebook />,
-      path: "",
+      path: "https://www.facebook.com/tanzid64",
     },
   ];
   return (
