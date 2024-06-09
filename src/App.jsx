@@ -12,19 +12,19 @@ const App = () => {
           element: <Home />,
         },
         {
-          path: "/services",
+          path: "services",
           element: <Services />,
         },
         {
-          path: "/work",
+          path: "work",
           element: <Work />,
         },
         {
-          path: "/resume",
+          path: "resume",
           element: <Resume />,
         },
         {
-          path: "/contact",
+          path: "contact",
           element: <Contact />,
         },
       ],

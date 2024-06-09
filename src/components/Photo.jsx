@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "/public/assets/photo.png";
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
