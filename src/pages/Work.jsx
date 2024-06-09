@@ -11,42 +11,9 @@ import {
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { WorkSliderBtns } from "@/components";
+import { projects } from "@/data/data";
 
-const projects = [
-  {
-    num: "01",
-    category: "Full Stack",
-    title: "Project -1",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam vitae fugit aspernatur nulla nesciunt ab ipsam. Consectetur facilis illum a?",
-    stack: [{ name: "html5" }, { name: "html5" }],
-    image: "/public/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "Full Stack",
-    title: "Project -2",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam vitae fugit aspernatur nulla nesciunt ab ipsam. Consectetur facilis illum a?",
-    stack: [{ name: "html5" }, { name: "html5" }],
-    image: "/public/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "Full Stack",
-    title: "Project -3",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam vitae fugit aspernatur nulla nesciunt ab ipsam. Consectetur facilis illum a?",
-    stack: [{ name: "html5" }],
-    image: "/public/assets/work/thumb3.png",
-    live: "",
-    github: "",
-  },
-];
+
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -95,7 +62,7 @@ const Work = () => {
               {/* buttons */}
               <div className=" flex items-center gap-4">
                 {/* Live Project Button */}
-                <a href={project.live} className="">
+                <a href={project.live} className="group" target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group-hover:text-accent">
@@ -108,7 +75,7 @@ const Work = () => {
                   </TooltipProvider>
                 </a>
                 {/* GitHub Project Button */}
-                <a href={project.github} className="">
+                <a href={project.github} className="group" target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group-hover:text-accent">

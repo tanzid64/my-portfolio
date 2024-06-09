@@ -19,7 +19,11 @@ const Photo = () => {
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
-          <img src={Image} alt="profile photo" className="object-contain" />
+          <img
+            src="https://res.cloudinary.com/djwpnwfs8/image/upload/v1717964803/my-portfolio/thlogo.jpg"
+            alt="profile photo"
+            className="object-contain"
+          />
         </motion.div>
         {/* Circle */}
         <motion.svg

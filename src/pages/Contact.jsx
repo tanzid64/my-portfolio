@@ -2,36 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+880) 17089-15045",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "tanzid@inbox.ru",
-  },
-  {
-    icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "Kazipara, Mirpur, Dhaka",
-  },
-];
+import { contactInfo } from "@/data/data";
 
 const Contact = () => {
   return (
@@ -70,7 +43,7 @@ const Contact = () => {
           {/* Info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
+              {contactInfo.map((item, index) => {
                 return (
                   <li className="flex items-center gap-6" key={index}>
                     <div className="w-[52px] h-[52px] xl:h-[72px] xl:w-[72px] bg-[#27272c] rounded-md text-accent flex items-center justify-center">
