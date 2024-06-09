@@ -1,4 +1,4 @@
-import { Link, redirect, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
@@ -16,7 +16,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link to="/contact">
-            <Button >Hire me</Button>
+            <Button>Hire me</Button>
           </Link>
         </div>
         {/* Mobile Nav & hire me button */}
