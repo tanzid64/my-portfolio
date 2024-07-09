@@ -31,7 +31,7 @@ const Resume = () => {
   const about = {
     title: "About Me",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
+      "Hello! I'm a passionate developer with a keen interest in web development, and backend systems. I have a strong passion for creating efficient and scalable software solutions. I am always seeking out new and innovative ways to improve my skills and stay up-to-date with the latest technologies.",
     info: [
       {
         fieldName: "Name",
@@ -63,7 +63,7 @@ const Resume = () => {
     icon: educationIcon,
     title: "My Education",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
+      "I have completed my education from Green University. I have studied CSE Fundamentals with Phitron.",
     items: [
       {
         institution: "Green University",
@@ -81,7 +81,7 @@ const Resume = () => {
   const skills = {
     title: "My Skills",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus rerum minima odit provident corrupti officiis blanditiis vero, deserunt ratione!",
+      "Skilled in developing robust backend systems with Node.js & Django, focusing on creating efficient APIs and server-side logic. Experienced in working with ESP32-CAM for IoT projects. Proficient in using Git for version control, ensuring smooth collaboration and project management.",
     skillList: [
       {
         icon: <FaHtml5 />,
@@ -232,7 +232,10 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((info, index) => {
                     return (
-                      <li className="flex items-center justify-center xl:justify-start gap-4" key={index}>
+                      <li
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                        key={index}
+                      >
                         <span className="text-white/60">{info.fieldName}</span>
                         <span className="text-xl">{info.fieldValue}</span>
                       </li>
