@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 // run package config
 dotenv.config();
 export default defineConfig({
+  base: "/my-portfolio/",
   plugins: [react()],
   resolve: {
     alias: {
