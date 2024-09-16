@@ -30,6 +30,6 @@ const App = () => {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} basename="/my-portfolio/" />;
 };
 export default App;
