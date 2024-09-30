@@ -44,6 +44,7 @@ const Home = () => {
         </div>
       </div>
       {/* <Stats /> */}
+      Test
     </section>
   );
 };
