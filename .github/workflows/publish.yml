@@ -24,6 +24,9 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
+      - name: add .htaccess to dist
+        run: cp .htaccess dist/
+
       - name: Deploy to build branch
         run: |
           git config --global user.name 'tanzid64'
