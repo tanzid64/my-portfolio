@@ -3,6 +3,46 @@ export const projects = [
   {
     num: "01",
     category: "Full Stack",
+    title: "PDFCraft",
+    description:
+      "A saas application where user can chat with PDFs with the help of open AI",
+    stack: [
+      { name: "Next JS" },
+      { name: "Tailwind CSS" },
+      { name: "Shadcn UI" },
+      { name: "Open AI" },
+      { name: "Prisma" },
+      { name: "Tanstack Query" },
+      { name: "zod" },
+    ],
+    image:
+      "https://res.cloudinary.com/djwpnwfs8/image/upload/v1732025546/my-portfolio/project-photo/pdf-craft-dashboard.jpg",
+    live: "https://pdf-craft.vercel.app/",
+    github: "https://github.com/tanzid64/pdf-craft.git",
+  },
+  {
+    num: "02",
+    category: "Full Stack",
+    title: "PingPanda",
+    description:
+      "A saas application where user can track their business events and get notification in Discord",
+    stack: [
+      { name: "Next JS" },
+      { name: "Tailwind CSS" },
+      { name: "Shadcn UI" },
+      { name: "Prisma" },
+      { name: "Tanstack Query" },
+      { name: "zod" },
+      { name: "Discord" },
+    ],
+    image:
+      "https://res.cloudinary.com/djwpnwfs8/image/upload/v1732025956/my-portfolio/project-photo/pingpanda-landing-page.png",
+    live: "https://ping-panda-tau.vercel.app/",
+    github: "https://github.com/tanzid64/ping-panda.git",
+  },
+  {
+    num: "03",
+    category: "Full Stack",
     title: "Bindu Blood Bank",
     description:
       "A blood donation web application using React JS for front-end development and Django REST framework for back-end development.",
@@ -18,22 +58,7 @@ export const projects = [
     github: "https://github.com/tanzid64/Bindu-Blood-Bank/tree/main/frontend",
   },
   {
-    num: "02",
-    category: "Backend",
-    title: "Bindu Blood Bank API",
-    description: "API for Bindu Blood Bank Web Application",
-    stack: [
-      { name: "Django REST Framework" },
-      { name: "JSON Web Token" },
-      { name: "Swagger" },
-    ],
-    image:
-      "https://res.cloudinary.com/djwpnwfs8/image/upload/v1717966412/my-portfolio/project-photo/api_bindu_blood_bank_portfolio.png",
-    live: "https://sour-libby-thzone.koyeb.app/",
-    github: "https://github.com/tanzid64/Bindu-Blood-Bank/tree/main/backend",
-  },
-  {
-    num: "03",
+    num: "04",
     category: "Full Stack",
     title: "Jobify",
     description: "A job portal using MERN Stack",
@@ -61,6 +86,12 @@ export const services = [
   },
   {
     num: "03",
+    title: "Saas Development",
+    description:
+      "Bringing innovative ideas to life through scalable, cloud-based solutions is my expertise. I specialize in building Software as a Service (SaaS) platforms that deliver exceptional user experiences and streamline workflows. From multi-tenancy architecture to secure data management and seamless integrations, I create robust solutions that adapt to your business needs and empower your growth.",
+  },
+  {
+    num: "04",
     title: "API Development",
     description:
       "Efficient data management and integration are crucial for modern web applications. I develop RESTful APIs that provide seamless communication between the frontend and backend. By ensuring efficient data retrieval and manipulation, I enable your website to handle complex functionalities and scale effortlessly as your needs grow.",
@@ -78,11 +109,11 @@ export const contactInfo = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "tanzid@inbox.ru",
+    description: "tanzid3@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Kazipara, Mirpur, Dhaka",
+    description: "RainKhola Bazar, Mirpur-1, Dhaka",
   },
 ];

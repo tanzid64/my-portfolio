@@ -5,7 +5,9 @@ import {
   FaReact,
   FaNode,
   FaPython,
+  
 } from "react-icons/fa";
+import { SiNextdotjs, SiReacthookform, SiReactquery, SiTypescript } from "react-icons/si";
 import {
   SiTailwindcss,
   SiExpress,
@@ -96,12 +98,28 @@ const Resume = () => {
         name: "JavaScript",
       },
       {
+        icon: <SiTypescript />,
+        name: "TypeScript",
+      },
+      {
         icon: <SiTailwindcss />,
         name: "Tailwind CSS",
       },
       {
         icon: <FaReact />,
         name: "React.js",
+      },
+      {
+        icon: <SiNextdotjs/>,
+        name: "Next.js",
+      },
+      {
+        icon: <SiReactquery />,
+        name: "Tanstack Query",
+      },
+      {
+        icon: <SiReacthookform/>,
+        name: "React Hook Form",
       },
       {
         icon: <SiRedux />,
